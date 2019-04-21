@@ -1,23 +1,24 @@
 extends "res://characters/character.gd"
 
-const Y_AXIS_ROTATION = deg2rad(63.5)
-const X_AXIS_ROTATION = deg2rad(26.5)
-
 func control(delta):
 	velocity = Vector2()
-	
+
 	if Input.is_action_pressed('ui_up'):
-		velocity += Vector2(0, -1).rotated(Y_AXIS_ROTATION)
-			
+		velocity += Vector2(0, -1)
+
 	if Input.is_action_pressed('ui_down'):
-		velocity += Vector2(0, 1).rotated(Y_AXIS_ROTATION)
-			
+		velocity += Vector2(0, 1)
+
 	if Input.is_action_pressed('ui_left'):
-		velocity += Vector2(-1, 0).rotated(X_AXIS_ROTATION)
-			
+		velocity += Vector2(-1, 0)
+
 	if Input.is_action_pressed('ui_right'):
-		velocity += Vector2(1, 0).rotated(X_AXIS_ROTATION)
-		
+		velocity += Vector2(1, 0)
+
 	if velocity != Vector2():
 		set_rotation(velocity.angle())
+		velocity = cartesian_to_isometric(velocity)
 		velocity = velocity.normalized() * speed
+
+func cartesian_to_isometric(cartesian):
+	return Vector2(cartesian.x - cartesian.y, (cartesian.x + cartesian.y) / 2)
