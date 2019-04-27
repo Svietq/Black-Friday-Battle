@@ -17,8 +17,4 @@ func control(delta):
 
 	if velocity != Vector2():
 		set_rotation(velocity.angle())
-		velocity = cartesian_to_isometric(velocity)
 		velocity = velocity.normalized() * speed
-
-func cartesian_to_isometric(cartesian):
-	return Vector2(cartesian.x - cartesian.y, (cartesian.x + cartesian.y) / 2)
