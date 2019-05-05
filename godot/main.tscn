@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://supermarket/floor.tres" type="TileSet" id=1]
 [ext_resource path="res://characters/player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Trolley.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Item.tscn" type="PackedScene" id=4]
 
 [node name="main" type="Node2D"]
 
@@ -21,4 +23,11 @@ speed = 100
 position = Vector2( 1.63611, 3.05759 )
 current = true
 zoom = Vector2( 0.7, 0.7 )
+
+[node name="Trolley" parent="." instance=ExtResource( 3 )]
+position = Vector2( 321.823, 302.308 )
+collision_layer = 2
+
+[node name="Item" parent="." instance=ExtResource( 4 )]
+position = Vector2( 498.392, 418.808 )
 
