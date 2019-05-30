@@ -31,3 +31,6 @@ shape = SubResource( 1 )
 [node name="Position2D" type="Position2D" parent="." index="3"]
 position = Vector2( 50, -10 )
 
+[node name="CollisionShape2D" parent="detector" index="0"]
+position = Vector2( 0.135269, -32.3311 )
+
