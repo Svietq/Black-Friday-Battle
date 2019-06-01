@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Timer.gd" type="Script" id=1]
+
+[sub_resource type="StyleBoxLine" id=5]
+
+[sub_resource type="StyleBoxLine" id=6]
+
+[node name="Timer" type="RichTextLabel"]
+margin_left = 308.791
+margin_top = 114.947
+margin_right = 452.791
+margin_bottom = 178.947
+grow_horizontal = 2
+grow_vertical = 2
+custom_styles/focus = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+custom_colors/default_color = Color( 0.00784314, 0.00784314, 0.00784314, 1 )
+custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+meta_underlined = false
+tab_size = 17
+script = ExtResource( 1 )
+
