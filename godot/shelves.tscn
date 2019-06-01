@@ -1,0 +1,115 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://supermarket/shelves/shelf1.tscn" type="PackedScene" id=1]
+[ext_resource path="res://supermarket/shelves/shelf4.tscn" type="PackedScene" id=2]
+[ext_resource path="res://supermarket/shelves/shelf2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://supermarket/shelves/shelf3.tscn" type="PackedScene" id=4]
+[ext_resource path="res://supermarket/shelves/shelf6.tscn" type="PackedScene" id=5]
+
+[node name="shelves" type="YSort"]
+
+[node name="shelf1" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1248.65, 9.2731 )
+
+[node name="shelf4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 771.26, 19.8524 )
+
+[node name="shelf4-12" parent="." instance=ExtResource( 2 )]
+position = Vector2( 643.429, 86.0872 )
+
+[node name="shelf1-2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1114.03, 74.2242 )
+
+[node name="shelf4-2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 458.232, 605.951 )
+
+[node name="shelf4-3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 324.078, 669.259 )
+
+[node name="shelf4-4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 189.925, 737.09 )
+
+[node name="shelf4-5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 328.6, 479.334 )
+
+[node name="shelf4-9" parent="." instance=ExtResource( 2 )]
+position = Vector2( 156.763, 387.386 )
+
+[node name="shelf4-10" parent="." instance=ExtResource( 2 )]
+position = Vector2( 24.1175, 452.202 )
+
+[node name="shelf4-11" parent="." instance=ExtResource( 2 )]
+position = Vector2( -28.6395, 292.424 )
+
+[node name="shelf4-8" parent="." instance=ExtResource( 2 )]
+position = Vector2( 57.279, 801.905 )
+
+[node name="shelf4-6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 192.94, 545.657 )
+
+[node name="shelf4-7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 55.7716, 614.995 )
+
+[node name="shelf1-3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 983.586, 139.398 )
+
+[node name="shelf1-4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 851.907, 203.624 )
+
+[node name="shelf1-5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 451.983, 8.77353 )
+
+[node name="shelf2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 691.496, 439.888 )
+
+[node name="shelf2-3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1313.26, 489.129 )
+
+[node name="shelf2-7" parent="." instance=ExtResource( 3 )]
+position = Vector2( 530.95, 775.523 )
+
+[node name="shelf2-4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 234.321, 183.485 )
+
+[node name="shelf2-5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 463.136, 305.408 )
+
+[node name="shelf2-6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 3.83603, 69.9125 )
+
+[node name="shelf3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1092.27, 352.85 )
+
+[node name="shelf3-2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 972.631, 412.457 )
+
+[node name="shelf6-9" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1062.8, 621.379 )
+
+[node name="shelf6" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1138.23, 658.494 )
+
+[node name="shelf6-2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1215.47, 695.986 )
+
+[node name="shelf6-3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1296.08, 731.929 )
+
+[node name="shelf6-4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 802.601, 674.514 )
+
+[node name="shelf6-5" parent="." instance=ExtResource( 5 )]
+position = Vector2( 878.597, 710.507 )
+
+[node name="shelf6-6" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1375.71, 769.315 )
+
+[node name="shelf6-7" parent="." instance=ExtResource( 5 )]
+position = Vector2( 951.634, 746.952 )
+
+[node name="shelf6-8" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1028.8, 784.787 )
+
+[node name="shelf6-10" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1102.65, 821.083 )
+
