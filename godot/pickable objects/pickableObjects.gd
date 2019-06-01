@@ -9,11 +9,9 @@ func _physics_process(delta):
 	var bodies = $detector.get_overlapping_bodies()
 
 	if picked == true:
+		print("ziemniak2", get_parent())
 		self.position = get_node("../player/Position2D").get_transform().get_origin()
 		self.rotation = get_node("../player/Position2D").get_transform().get_rotation()
-		
-
-	
 
 func _input(event):
 	if Input.is_action_just_pressed("ui_accept"):
@@ -30,5 +28,8 @@ func _input(event):
 				print("polozone na wozku")
 				print(b.name)
 				items+=1
+	
+		print("ziemniak", get_parent())
 
 		get_node("../player").can_pick = true
+		

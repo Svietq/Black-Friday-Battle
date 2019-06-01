@@ -19,7 +19,7 @@ func control(delta):
 	
 
 	if velocity != Vector2():
-		set_rotation(velocity.angle())
+		#set_rotation(velocity.angle())
 		velocity = velocity.normalized() * speed
 		get_node("Position2D").position = get_node("Position2D").position.linear_interpolate(position + velocity, 1.0)
 		get_node("Position2D").rotation = transform.get_rotation()

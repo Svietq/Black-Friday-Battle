@@ -8,4 +8,3 @@ func _init():
 
 func _process(delta):
 	countText.set_text(str(items))
-	
