@@ -12,7 +12,6 @@ func _physics_process(delta):
 				print("Trolley")
 			if name == "item1":
 				print("item1")
-			print(b.name)
 	if picked == true:
 		self.position = get_node("../player/Position2D").get_transform().get_origin()
 		self.rotation = get_node("../player/Position2D").get_transform().get_rotation()
