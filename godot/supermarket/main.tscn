@@ -2,8 +2,8 @@
 
 [ext_resource path="res://supermarket/main.gd" type="Script" id=1]
 [ext_resource path="res://supermarket/floor.tres" type="TileSet" id=2]
-[ext_resource path="res://supermarket/shelves/shelf1.tscn" type="PackedScene" id=3]
-[ext_resource path="res://characters/player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://characters/player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://supermarket/shelves/shelves.tscn" type="PackedScene" id=4]
 [ext_resource path="res://supermarket/walls.tres" type="TileSet" id=5]
 
 [node name="main" type="Node2D"]
@@ -18,13 +18,19 @@ tile_data = PoolIntArray( -786421, 0, 0, -720886, 0, 0, -720885, 0, 0, -720884, 
 
 [node name="shelves" type="Node2D" parent="."]
 
-[node name="shelf1" parent="shelves" instance=ExtResource( 3 )]
-position = Vector2( 1140, 380 )
-
-[node name="player" parent="." instance=ExtResource( 4 )]
-editor/display_folded = true
-position = Vector2( 1356.19, 274.729 )
+[node name="player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1355.29, 276.534 )
 speed = 200
+
+[node name="GUI" type="MarginContainer" parent="player"]
+editor/display_folded = true
+margin_left = -23.1899
+margin_top = -243.729
+margin_right = 81.8101
+margin_bottom = -208.729
+
+[node name="shelves2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 73.6708, 17.2419 )
 
 [node name="walls" type="TileMap" parent="."]
 mode = 1

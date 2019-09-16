@@ -5,5 +5,5 @@
 [node name="main" type="Node2D"]
 
 [node name="main" parent="." instance=ExtResource( 1 )]
-position = Vector2( 8.48724, -16.8673 )
+position = Vector2( 8.30169, -10.1657 )
 
