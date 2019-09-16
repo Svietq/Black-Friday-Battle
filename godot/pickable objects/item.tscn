@@ -1,15 +1,15 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://pickable objects/item.gd" type="Script" id=1]
+[ext_resource path="res://pickable objects/pickableObjects.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 34.567, 32.6546 )
+extents = Vector2( 34.567, 32.2118 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 54.168, 47.1525 )
+extents = Vector2( 31.3884, 28.3668 )
 
-[node name="item" type="RigidBody2D"]
+[node name="item" type="StaticBody2D"]
 position = Vector2( 465.888, 376.506 )
 script = ExtResource( 1 )
 
