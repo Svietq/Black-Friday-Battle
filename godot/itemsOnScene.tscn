@@ -5,8 +5,10 @@
 [ext_resource path="res://characters/player.gd" type="Script" id=3]
 [ext_resource path="res://pickable objects/Trolley.tscn" type="PackedScene" id=4]
 [ext_resource path="res://pickable objects/Trolley.gd" type="Script" id=5]
-[ext_resource path="res://pickable objects/item1.tscn" type="PackedScene" id=6]
-[ext_resource path="res://pickable objects/item1.gd" type="Script" id=7]
+[ext_resource path="res://pickable objects/item.tscn" type="PackedScene" id=6]
+[ext_resource path="res://pickable objects/item.gd" type="Script" id=7]
+
+
 
 [node name="ItemsOnScene" type="YSort"]
 
