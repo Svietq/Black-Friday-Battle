@@ -3,7 +3,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 42.136, 40.7432 )
+extents = Vector2( 8.96007, 9.03885 )
 
 [node name="Body2D" type="KinematicBody2D"]
 
