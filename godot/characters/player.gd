@@ -12,14 +12,11 @@ var down_left_image = ImageTexture.new()
 
 func _init():
 	name = "Player"
-	
-	var dir = Directory.new()
-	dir.change_dir("./assets/characters/")
-	dir.list_dir_begin(true, true)
-	up_right_image.load("./assets/characters/trolley_up_right.png")
-	down_right_image.load("./assets/characters/trolley_down_right.png")
-	up_left_image.load("./assets/characters/trolley_up_left.png")
-	down_left_image.load("./assets/characters/trolley_down_left.png")
+
+	up_right_image = ResourceLoader.load("res://assets/characters/trolley_up_right.png")
+	down_right_image = ResourceLoader.load("res://assets/characters/trolley_down_right.png")
+	up_left_image = ResourceLoader.load("res://assets/characters/trolley_up_left.png")
+	down_left_image = ResourceLoader.load("res://assets/characters/trolley_down_left.png")
 	
 func control(delta):
 	if is_time_over:
